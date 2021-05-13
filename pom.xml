@@ -58,7 +58,7 @@
 						<applicationName>${applicationName}</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 						<username>${username}</username>
-						<password>${pwd}</password>
+						<password>${password}</password>
 						
 						
 						<objectStoreV2>true</objectStoreV2>

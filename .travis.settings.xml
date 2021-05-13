@@ -1,9 +1,9 @@
 <settings>
-<servers>
-<server>
-<id>apypoint-platform</id>
-<username>${env.username}</username>
-<password>${env.password}</password>
-</server>
-</servers>
+  <servers>
+    <server>
+      <id>https://anypoint.mulesoft.com</id>
+      <username>${env.username}</username>
+      <password>${env.password}</password>
+    </server>
+  </servers>
 </settings>
