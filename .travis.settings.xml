@@ -1,0 +1,9 @@
+<settings>
+<server>
+<server>
+<id>anypoint-platform</id>
+<username>${env.username}</username>
+<password>${env.password}</password>
+</server>
+</server>
+</settings>

@@ -1,10 +1,18 @@
 language: java #language
 jdk:
     - openjdk8   #VM
+    
+cache:
+    directories:
+        - "$HOME/.cache"
+
+    
 jobs:
-   - stage: deploy #stage type
-     name: "Deploy stage" #stage name
-     script:
-          - mvn clean install #job-1
-          - mvn deploy -DmuleDeploy -Dusername=anypoint-mulesoft2008A -Dpwd=120120$$SEWhun #job-2
-     if: branch = master #specify which branch to build
+    - stage: deploy #stage type
+      name: "Deploy To Dev Environment" #stage name
+      script:
+       - mvn clean install #job-1
+       - cp .travis.settings.xml $HOME/.m2/settings.xml
+       - mvn deploy -DmuleDeploy -Dserver=$server -Dworkers=$workers -DworkerType=$workerType -Denvironment=$environment -DmuleVersion=$muleVersion -DappName=$appName
+      if: branch = master #specify which branch to build
+    
