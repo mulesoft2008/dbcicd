@@ -54,7 +54,7 @@
 						<workers>${workers}</workers>
 						<workerType>${workerType}</workerType>
 						<environment>${environment}</environment>
-						<muleVersion>${<muleVersion>}</muleVersion>
+						<muleVersion>${muleVersion}</muleVersion>
 						<applicationName>${applicationName}</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 						<username>${username}</username>
