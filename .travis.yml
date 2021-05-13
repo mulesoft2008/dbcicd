@@ -1,6 +1,6 @@
 language: java #language
 jdk:
-    - jdk8   #VM
+    - openjdk8   #VM
 jobs:
    - stage: deploy #stage type
      name: "Deploy stage" #stage name
