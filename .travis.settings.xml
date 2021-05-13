@@ -1,7 +1,7 @@
 <settings>
 <servers>
 <server>
-<id>anypoint-platform</id>
+<id>https://anypoint.mulesoft.com</id>
 <username>${env.username}</username>
 <password>${env.password}</password>
 </server>
