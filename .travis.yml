@@ -1,0 +1,10 @@
+language: java #language
+jdk:
+    - openjdk8   #VM
+jobs:
+   - stage: deploy #stage type
+     name: "Deploy stage" #stage name
+     script:
+          - mvn clean install #job-1
+          - mvn deploy -DmuleDeploy -Dusername=anypoint-mulesoft2008A -Dpwd=120120$$SEWhun #job-2
+     if: branch = dev #specify which branch to build
