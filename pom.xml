@@ -49,15 +49,21 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
+						<!-- <uri>https://anypoint.mulesoft.com</uri> -->
+						<server>https://anypoint.mulesoft.com</server>
+						<workers>${workers}</workers>
+						<workerType>${workerType}</workerType>
+						<environment>${environment}</environment>
 						<muleVersion>${app.runtime}</muleVersion>
+						<applicationName>${applicationName}</applicationName>
+						<objectStoreV2>true</objectStoreV2>
 						<username>${username}</username>
 						<password>${pwd}</password>
-						<applicationName>try-travis</applicationName>
-						<environment>Sandbox</environment>
+						
+						
 						<objectStoreV2>true</objectStoreV2>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
+						
+						
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
