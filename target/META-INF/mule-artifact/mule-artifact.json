@@ -1,7 +1,6 @@
 {
   "configs": [
-    "testdb.xml",
-    "test.xml"
+    "testdb.xml"
   ],
   "secureProperties": [],
   "redeploymentEnabled": true,
@@ -13,9 +12,7 @@
     "attributes": {
       "exportedPackages": [],
       "exportedResources": [
-        "api/test.raml",
         "log4j2.xml",
-        "test.xml",
         "testdb.xml"
       ]
     }
